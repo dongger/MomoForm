@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5065D447-7EF0-440D-BBAA-E2C96ECFFF0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Momo.Forms</RootNamespace>
+    <AssemblyName>Momo.Forms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="Animation\ColorAnimation.cs" />
+    <Compile Include="Animation\PictureAnimation.cs" />
+    <Compile Include="Controls\MDateWeekTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MDocking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MHeadLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MHtmlTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MSplit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MSuperTableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MSwitchAnmation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MTriangleMarkPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MDateTimePicker.designer.cs">
+      <DependentUpon>MDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MHollowCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MHollowCircle.Designer.cs">
+      <DependentUpon>MHollowCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MPathChoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MPathChoice.Designer.cs">
+      <DependentUpon>MPathChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MFileChoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MFileChoice.Designer.cs">
+      <DependentUpon>MFileChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MFlowLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MFlowLayout.designer.cs">
+      <DependentUpon>MFlowLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MGroupBox.designer.cs">
+      <DependentUpon>MGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MTabControlDesigner.cs" />
+    <Compile Include="Controls\MCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MBorderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MBorderControl.Designer.cs">
+      <DependentUpon>MBorderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MComboBox.designer.cs">
+      <DependentUpon>MComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageBoxEx.cs" />
+    <Compile Include="Controls\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageBoxForm.designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MRolling.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MTabHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MTextBox.designer.cs">
+      <DependentUpon>MTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MCaptionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MStepControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MPagedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MPagedControl.designer.cs">
+      <DependentUpon>MPagedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MSideBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MSideBar.designer.cs">
+      <DependentUpon>MSideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MSideBarDesigner.cs" />
+    <Compile Include="Controls\MSideBarMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MSideBarMenu.designer.cs">
+      <DependentUpon>MSideBarMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawables\ColorHelper.cs" />
+    <Compile Include="Drawables\ImageAnimation.cs" />
+    <Compile Include="Drawables\ImageTool.cs" />
+    <Compile Include="Enums\BorderType.cs" />
+    <Compile Include="Enums\TextAlignment.cs" />
+    <Compile Include="MAnimationControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MHtmlElementControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\MBorder.cs" />
+    <Compile Include="Popup.cs" />
+    <Compile Include="MShadowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MShadowForm.designer.cs">
+      <DependentUpon>MShadowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\DockLocation.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Enums\RangeAnimationAnchor.cs" />
+    <Compile Include="Enums\SplitDirection.cs" />
+    <Compile Include="Enums\TextImageRelation.cs" />
+    <Compile Include="Enums\ButtonStatus.cs" />
+    <Compile Include="Enums\CaptionLocation.cs" />
+    <Compile Include="Enums\CaptionTitleLocation.cs" />
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="Animation\MoveAnimation.cs" />
+    <Compile Include="Controls\MBanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enums\TextModel.cs" />
+    <Compile Include="Enums\TriangleMarkMode.cs" />
+    <Compile Include="GDIHelper.cs" />
+    <Compile Include="MToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette\LabelPalette.cs" />
+    <Compile Include="Palette\NotifyPalette.cs" />
+    <Compile Include="Palette\CaptionFullButton.cs" />
+    <Compile Include="Palette\MenuItemPalette.cs" />
+    <Compile Include="Animation\RangleAnimation.cs" />
+    <Compile Include="Palette\PointPalette.cs" />
+    <Compile Include="Structs\BLENDFUNCTION.cs" />
+    <Compile Include="Structs\HITTEST.cs" />
+    <Compile Include="Structs\Point32.cs" />
+    <Compile Include="Structs\Size32.cs" />
+    <Compile Include="Structs\TCHITTESTINFO.cs" />
+    <Compile Include="Structs\TCHT.cs" />
+    <Compile Include="Structs\TCM.cs" />
+    <Compile Include="Structs\WM.cs" />
+    <Compile Include="UITypeEditor\FrmHtmlTableColumnEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITypeEditor\FrmHtmlTableColumnEditor.Designer.cs">
+      <DependentUpon>FrmHtmlTableColumnEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditor\HtmlTableColumnEditor.cs" />
+    <Compile Include="UITypeEditor\FrmCaptionControlButtonEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITypeEditor\FrmCaptionControlButtonEditor.Designer.cs">
+      <DependentUpon>FrmCaptionControlButtonEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditor\FrmUITypeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITypeEditor\FrmUITypeEditor.Designer.cs">
+      <DependentUpon>FrmUITypeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Palette\ActivePalette.cs" />
+    <Compile Include="UITypeEditor\CaptionControlButtonEditor.cs" />
+    <Compile Include="TypeConverters\GradientColorTypeConverter.cs" />
+    <Compile Include="Models\GradientColor.cs" />
+    <Compile Include="Enums\GradientMode.cs" />
+    <Compile Include="Palette\Caption\DefaultCaptionPalette.cs" />
+    <Compile Include="MForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palette\Palette.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawables\RadiusDrawable.cs" />
+    <Compile Include="Enums\RadiusMode.cs" />
+    <Compile Include="Palette\CaptionControlButton.cs" />
+    <Compile Include="TypeConverters\TypeConverterGeneral.cs" />
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\MDateTimePicker.resx">
+      <DependentUpon>MDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MDocking.resx">
+      <DependentUpon>MDocking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MPathChoice.resx">
+      <DependentUpon>MPathChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MFileChoice.resx">
+      <DependentUpon>MFileChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MGroupBox.resx">
+      <DependentUpon>MGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MBanner.resx">
+      <DependentUpon>MBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MPictureBox.resx">
+      <DependentUpon>MPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MTextBox.resx">
+      <DependentUpon>MTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MPagedControl.resx">
+      <DependentUpon>MPagedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MSideBar.resx">
+      <DependentUpon>MSideBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MSideBarMenu.resx">
+      <DependentUpon>MSideBarMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MShadowForm.resx">
+      <DependentUpon>MShadowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditor\FrmHtmlTableColumnEditor.resx">
+      <DependentUpon>FrmHtmlTableColumnEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditor\FrmCaptionControlButtonEditor.resx">
+      <DependentUpon>FrmCaptionControlButtonEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditor\FrmUITypeEditor.resx">
+      <DependentUpon>FrmUITypeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(ProjectDir)copyfile.bat</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<MUpgrade xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppEntry>aaaa</AppEntry>
+  <AppName>新华网公务行呼叫中心坐席软件</AppName>
+  <Version>
+    <Build>2</Build>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Revision>3</Revision>
+  </Version>
+  <Description>升级描述</Description>
+  <BaseUrl>http://localhost:1234/upgrade</BaseUrl>
+  <Files>
+    <MFile>
+      <Name>text.txt</Name>
+      <Path />
+    </MFile>
+    <MFile>
+      <Name>test.dll</Name>
+      <Path />
+    </MFile>
+  </Files>
+  <AllowIgnore>false</AllowIgnore>
+</MUpgrade>

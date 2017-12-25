@@ -1,0 +1,1 @@
+copy /y "F:\神兵利器\MomoForm\Momo.Forms\bin\Debug\Momo.Forms.dll" "F:\神兵利器\MomoForm\Momo.Forms\"
